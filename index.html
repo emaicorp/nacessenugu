@@ -3,26 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- GOOGLE ICONS -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<!-- INLINE CSS -->
+<style type="text/css">
+    /*Rules for sizing the icon*/
+    .material-symbols-outlined.md-18 { font-size: 18px; }
+    .material-symbols-outlined.md-24 { font-size: 24px; }
+    .material-symbols-outlined.md-36 { font-size: 36px; }
+    .material-symbols-outlined.md-48 { font-size: 48px; }
+    </style>
 </head>
 <body>
     <!-- SIDE BAR BEINGING -->
-    <div class="sidebar">
+    <div class="sidebarNav" id="sidebar">
+        <span class="material-symbols-outlined md-48 close" id="close">
+            close
+            </span>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
-            <!-- <li></li>
-            <li></li> -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
         <div class="search">
             <input type="text" placeholder="Search">
-            <button></button>
+            <button>
+                <span class="material-symbols-outlined  " id="">
+                    search
+                    </span>
+            </button>
         </div>
-        <div class="social-icons">
-
-        </div>
+        <div class="social-icons mt-3">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+         </div>
     </div>
 
     <!-- NAV BAR BEGINING -->
@@ -31,17 +59,16 @@
             <img src="./assets/images/logo.jpeg" alt="" srcset="">
         </div>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
         <div class="perf">
             <div class="social-icons">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact Us</li>
-                </ul>
+               <span><i class="fa-brands fa-facebook"></i></span>
+               <span><i class="fa-brands fa-twitter"></i></span>
+               <span><i class="fa-brands fa-instagram"></i></span>
+               <span><i class="fa-brands fa-whatsapp"></i></span>
             </div>
         <div class="search">
             <input type="text" placeholder="Search">
@@ -49,8 +76,34 @@
         </div>
     </div>
         <div class="button-nav">
-            <button><img src="./assets/images/toggle.c5542e7c.svg" alt="" srcset=""></button>
+            <button id="nav-open"><img src="./assets/images/toggle.c5542e7c.svg" alt="" srcset=""></button>
         </div>
     </nav>
+
+    <div class="main">
+        <div class="head-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 head-text">
+                        <h1 class="text-white text-center">NACESSENUGU</h1>
+                        <p class="text-white">
+                            NACESS LEADERSHIP RETREAT – LEAD 1.0 Inspires Young Leaders with the Theme “Culturing Young Student Leaders for a Prosperous Tomorrow
+                        </p>
+                    </div>
+                    <div class="col-md-6 header-img mt-5">
+                        <img src="./assets/images/header1.webp" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/js/all.js" integrity="sha512-vn7pO1RiR0IT5T9K+USTmMfkTaecOtFtCCV0JvT+j8ZPBujq6C3P5J2sHttG7D41pBPqLCih+7lIXamnFodtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+       <!-- <script src="https://kit.fontawesome.com/47219a1a3d.js" crossorigin="anonymous"></script> -->
 </body>
 </html>
