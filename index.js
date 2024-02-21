@@ -26,10 +26,10 @@ function reveal(){
 
          if(revealTop < windowHeight - revealPoint  ){
             reveals[i].classList.add('active');
-            $(document).ready(function () {
+        //     $(document).ready(function () {
 
-            $('#report').load(location.href + " #report");
-        });
+        //     $('#report').load(location.href + " #report");
+        // });
 
          }else{
             reveals[i].classList.remove('active');
